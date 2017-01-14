@@ -1,0 +1,13 @@
+{{!--
+Creates a button using semantic-ui.
+@param {string} class - An arbitrary variable for modifying the button style.
+@param {boolean} state - Toggles the active class on the button.
+@param {boolean} focusable - Allows buttons to be keyboard focusable, needed only on non-button tags.
+@return {string} The customized button.
+{{> elements/buttons/button class="primary" state="active"}}
+ --}}
+
+
+<button class="ui button {{class}} {{#if active}}active{{/if}}" {{#if focusable}}tabindex="0"{{/if}}>
+  {{label}}
+</button>

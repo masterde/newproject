@@ -1,0 +1,28 @@
+{{#if left}}
+<div class="ui left labeled button" tabindex="0">
+  <a class="ui basic label {{class}}">
+    {{text}}
+  </a>
+  <div class="ui icon button">
+    {{#if icon}}<i class="{{icon}} icon"></i>{{/if}} {{label}}
+  </div>
+</div>
+{{else}}
+<div class="ui labeled button" tabindex="0">
+  <div class="ui button">
+    {{#if icon}}<i class="{{icon}} icon"></i>{{/if}} {{label}}
+  </div>
+  <a class="ui basic label {{class}}">
+    {{text}}
+  </a>
+</div>
+{{/if}}
+
+ {{!-- <div class="ui left labeled button" tabindex="0">
+  <a class="ui basic right pointing label">
+    {{text}}
+  </a>
+  <div class="ui button">
+    <i class="heart icon"></i> {{label}}
+  </div>
+</div>  --}}

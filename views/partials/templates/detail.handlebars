@@ -1,0 +1,33 @@
+{{> components/global/header }}
+<main role="main">
+
+	{{> components/text/page-header }}
+
+	<div class="l l--two-col">
+		<div class="l-main">
+			<section class="section">
+
+				{{> components/text/text-blob }}
+
+				{{# form }}
+
+				<hr />
+
+				{{> components/forms/stacked-form }}
+				{{/ form }}
+			</section>
+		</div><!--end .l-main-->
+
+		<div class="l-sidebar">
+			{{# featuredPosts }}
+			{{> components/section/section-media-list }}
+			{{/ featuredPosts}}
+			{{# featuredPeople }}
+			{{> components/section/section-media-list }}
+			{{/ featuredPeople}}
+		</div><!--end .l-sidebar-->
+
+	</div><!--end l--two-col-->
+
+</main>
+{{> components/global/footer }}
